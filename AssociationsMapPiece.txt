@@ -1,0 +1,99 @@
+
+	Relationships
+		
+		# black line, arrow pointing from local identifier to external class
+
+		--n--> new command
+		--s--> static class reference
+		--v--> variables
+		--e--> extends superclass
+		--i--> implements interface
+
+		--empty-- empty method
+
+-------------------------------------------------------------------------------
+
+
+
+
+	Piece
+
+		methods
+			rotate --empty-- 
+
+
+
+	AbstractPiece
+
+		variables
+			square	--v--> Square
+			grid 	--v--> Grid
+
+		constructor
+			square	--n--> Square
+
+
+
+
+
+
+	LShape
+
+		variables
+			square	--v--> Square
+			grid 	--v--> Grid
+
+		constructor
+			square	--n--> Square
+
+
+	SShape
+	ZShape
+	BarShape
+	SquareShape
+	JShape
+	LShape
+	TShape
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

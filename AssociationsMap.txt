@@ -1,0 +1,143 @@
+
+	Relationships
+		
+		# black line, arrow pointing from local identifier to external class
+
+		--n--> new command
+		--s--> static class reference
+		--v--> variables
+
+-------------------------------------------------------------------------------
+
+
+
+	TetrisUnitTest
+
+		main
+
+			tetris	--n--> Tetris
+
+
+
+	Tetris
+
+		variables
+			game	--v--> Game
+
+		constructor 
+			game	--n--> Game
+			f		--n--> JFrame
+			ec		--n--> EventController
+
+		main
+					--s--> SwingUtilities.invokeLater()
+
+
+
+	Game
+
+		variables
+			grid	--v--> Grid
+			display	--v--> Tetris
+			piece	--v--> LShape
+
+		constructor
+			grid	--n--> Grid	
+			piece	--n--> LShape
+
+
+
+		updatePiece
+					--s--> Tetris.downPushed
+
+
+
+
+	EventController
+
+		variables
+			game	--v--> Game
+			timer	--v--> Timer
+
+		constructor
+			timer	--n--> Timer
+
+		actionPerformed
+					--s--> Tetris.downPushed 
+
+
+
+	Grid
+
+		variables
+			board	--v--> Square
+			EMPTY	--v--> Color
+
+
+		constructor
+			board	--n--> Square
+
+
+
+	Square
+
+		variables
+			grid	--v--> Grid
+			color	--v--> Color
+
+
+
+	LShape
+
+		variables
+			square	--v--> Square
+			grid 	--v--> Grid
+
+		constructor
+			square	--n--> Square
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
